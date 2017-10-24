@@ -1,0 +1,617 @@
+/*------------------------------------*\
+    Default styles
+\*------------------------------------*/
+body {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'robotoregular', Arial;
+    background: #FAFAFA;
+}
+
+/*------ HEADER ----------------------*/
+
+header {
+	height: 70px;
+	background: #0097A7;
+}
+
+#headerlogo {
+	width: 50px;
+	height: 50px;
+	margin: 10px 0 0 10px;
+	float: left;
+	background-image: url("../images/logo-zorgsamen.svg");
+	background-repeat: no-repeat;
+}
+
+#headerbutton {
+	float: right;
+	color: white;
+	font-size: 32px;
+	margin: 22px 10px 0 0;
+}
+
+
+#paginatitel {
+	padding: 15px;
+	background: #B2EBF2;
+	font-family: 'robotobold', Arial;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #0098A9;
+}
+
+#headerback {
+	position: relative;
+}
+
+
+/*------ MAIN ----------------------*/
+
+#main {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+
+/*------ FORM ----------------------*/
+
+label {
+	width: 100%;
+	display: block;
+	font-family: 'robotobold', arial;
+	font-size: 18px;
+	color: #0098A9;
+	margin: 15px 0 10px 0;
+}
+
+input {
+	width: 100%;
+	height: 55px;
+	padding: 0 20px;
+	color: #0098A9;
+	background: none;
+	border: 1px solid #22B6C2;
+}
+
+textarea { 
+	width: 100%;
+	height: 130px;
+	padding: 20px;
+	color: #0098A9;
+	background: none;
+	border: 1px solid #22B6C2;
+	resize: none;
+}
+
+.btn {
+	height: 55px;
+	background: #22B6C2;
+	color: white;
+	font-family: 'robotobold', arial;
+	font-size: 24px;		
+	text-align: center;
+	line-height: 55px;
+	border: none;
+	margin: 0;
+	margin-top: 20px;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+}
+.btn:hover {
+	background: #0098A9;
+	cursor: pointer;
+}
+
+.btnred {
+	background: #FF5252;
+}
+.btnred:hover {
+	background: #ff0000;
+}
+
+.btndone {
+	position: relative;
+	background: #0098A9;
+}
+.btndone:hover {
+	background: #22B6C2;
+}
+
+.btnwijzig {
+	position: relative;
+}
+.btnwijzig:before {
+	content: "\f044";
+	font-family: 'FontAwesome';
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 2px;
+}
+
+.btnverwijder {
+	position: relative;
+	background: #FF5252;
+}
+.btnverwijder:before {
+	content: "\f014";
+	font-family: 'FontAwesome';
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 2px;
+}
+.btnverwijder:hover {
+	background: #ff0000;
+}
+
+.btndelete {
+	position: relative;
+	background: #FF5252;
+}
+.btndelete:before {
+	content: "\f014";
+	font-family: 'FontAwesome';
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 2px;
+}
+.btndelete:hover {
+	background: #ff0000;
+}
+
+.btnnieuw {
+	position: fixed;
+	bottom: 0;
+	height: 75px;
+	background: #0098A9;
+}
+.btnnieuw:before {
+	content: "\f067";
+	font-family: 'FontAwesome';
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 14px;
+}
+.btnnieuw:hover {
+	background: #22B6C2;
+}
+
+.btnuitloggen {
+	position: fixed;
+	bottom: 0;
+	height: 75px;
+	background: #FF5252;
+	line-height: 75px;
+}
+.btnuitloggen:hover {
+	background: #ff0000;
+}
+
+
+.btnback {
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: #0097A7;
+	border: none;
+	border-radius: 25px;
+	position: absolute;
+	position: absolute;
+	top: -30px;
+	left: 20px;
+	transition: all 0.5s ease;
+}
+.btnback:before {
+	content: "\f104";
+	font-family: 'FontAwesome';
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	left: 15px;
+	top: 12px;
+}
+
+.btnback:hover {
+	background: #22B6C2;
+}
+
+
+/*------ HOME ----------------------*/
+
+.home-blok {
+	background: #22B6C2;
+	margin-bottom: 30px;
+}
+.home-blok h2 {
+	background: #0097A7;
+	padding: 10px 20px;
+	color: white;
+	text-transform: uppercase;
+}
+.home-blok p {
+	padding: 20px;
+	color: white;
+}
+
+.home-info {
+	padding-bottom: 50px;
+}
+.home-info h2, .home-info h3, .home-info p {
+	text-align: center;
+	color: #333239;
+}
+.home-info h3, .home-info p {
+	font-family: 'robotolight', arial;
+}
+.home-info img {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid #E6E6E6;
+}
+
+.home-emotie {
+	position: relative;
+}
+.home-emotie-smiley {
+	margin-left: 20px;
+	padding: 20px;
+	height: 100px;
+	width: 100px;
+}
+.home-emotie-omschrijving {
+	position: absolute;
+	left: 120px;
+    top: 10px;
+	font-family: 'robotobold', arial;
+}
+.home-emotie-datum {
+	display: block;
+	font-family: 'robotolight', arial;
+	font-size: 13px;
+}
+
+.home-taken ul {
+	font-family: 'robotoregular', arial;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+	color: white;
+	padding: 20px;
+}
+.home-taken li {
+	list-style: none;
+	border-bottom: 1px solid white;
+	padding: 10px;
+}
+.home-taken li:last-of-type {
+	border: none;
+}
+
+
+
+/*------ PROFIEL --------------------*/
+
+.profiel ul {
+	font-family: 'robotoregular', arial;
+    margin: 0px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+	padding: 0px;
+	text-transform: uppercase;
+}
+.profiel ul:first-child {
+	border-top: 1px solid #22B6C2;
+}
+.profiel li {
+	list-style: none;
+	border-bottom: 1px solid #22B6C2;
+	padding: 20px 10px;
+	text-align: center;
+	color: #22B6C2;
+	transition: all 0.5s ease;
+}
+.profiel li:hover {
+	color: #0097A7;
+}
+.profiel a {
+	color: #22B6C2;
+}
+
+.profiel i.fa {
+	padding-right: 10px;
+	font-size: 28px;
+}
+
+img.profiel-zorgvrager {
+	width: 200px;
+	height: 200px;
+}
+
+
+.mantelzorger {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.mantelzorger p {
+	padding: 20px 80px 20px 90px;
+}
+
+.mantelzorger img {
+	margin: auto;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid #E6E6E6;
+	position: absolute;
+	left: 20px;
+	top: 0;
+	bottom: 0;
+}
+
+.mantelzorgers .mantelzorger-btn {
+	height: 100%;
+	width: 50px;
+	background: #FF5252;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+.mantelzorgers .mantelzorger-btn:before {
+	content: "\f014";
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: calc(50% - 12px);
+}
+.mantelzorgers .mantelzorger-btn:hover {
+	width: 70px;
+	cursor: pointer;
+}
+
+
+
+/*------ TAKENLIJST --------------------*/
+
+
+#taken {
+	background: #E6E6E6;
+	padding-bottom: 30px;
+}
+
+.takentab {
+	padding-bottom: 100px;
+}
+
+.takentab .btn {
+	width: 50%;
+	margin: 0;
+	float: left;
+	font-size: 18px;
+}
+
+.takentab .btn.select, .takentab .btn:hover {
+	background: #E6E6E6;
+	color: #0098A9;
+}
+
+.taak {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.taak p {
+	padding: 10px 80px 10px 20px;
+}
+
+.taak span {
+	display: block;
+	font-family: 'robotolight', arial;
+	font-size: 13px;
+}
+
+.mijntaken .taak-btn {
+	height: 100%;
+	width: 50px;
+	background: #0097A7;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+.mijntaken .taak-btn:before {
+	content: "\f00c";
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: calc(50% - 12px);
+}
+.mijntaken .taak-btn:hover {
+	width: 70px;
+	cursor: pointer;
+}
+
+.overigetaken .taak-btn {
+	height: 100%;
+	width: 50px;
+	background: #0097A7;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all 0.5s ease;
+}
+.overigetaken .taak-btn:before {
+	content: "\f067";
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: calc(50% - 10px);
+}
+.overigetaken .taak-btn:hover {
+	width: 70px;
+	cursor: pointer;
+}
+
+.doeik {
+	background: #E6E6E6;
+	padding: 20px 80px 20px 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.doeik p {
+	color: #727272;
+}
+.doeik .deletedoeik {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #B6B6B6;
+	width: 50px;
+	height: 100%;
+	transition: all 0.5s ease;
+}
+.doeik .deletedoeik:before {
+	content: "\f00d";
+	font-family: 'FontAwesome';
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: calc(50% - 10px);
+}
+.doeik .deletedoeik:hover {
+	width: 70px;
+	cursor: pointer;
+}
+
+
+
+
+/*------ LOGBOEK --------------------*/
+
+.logboek h2{
+	font-size: 18px;
+	text-transform: none;
+}
+
+.logboek span {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: 'robotolight', Arial;
+	display: block;
+
+}
+
+a.klik-logboek {
+	cursor: pointer;
+}
+
+.bericht {
+	line-height: 24px;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #b6b6b6;
+}
+.bericht p {
+	padding-top: 5px;
+}
+
+
+
+/*------------------------------------*\
+    MD MediaQuery
+\*------------------------------------*/
+@media only screen and (max-width : 1024px) /* Als je de width aanpast pas ook de media query aan in simplegrid */ {
+	body {background: green;}
+  
+	#headerlogo {
+		margin: 10px 0 0 10px;
+	}
+	
+	#headerbutton {
+		margin: 22px 10px 0 0;
+	}
+}
+
+
+/*------------------------------------*\
+    SM MediaQuery
+\*------------------------------------*/
+@media only screen and (max-width : 768px) /* Als je de width aanpast pas ook de media query aan in simplegrid */ {
+  body {background: yellow;}
+}
+
+
+/*------------------------------------*\
+    XS MediaQuery
+\*------------------------------------*/
+@media screen and (max-width : 480px) /* Als je de width aanpast pas ook de media query aan in simplegrid */ {
+  body {background: orange;}
+  
+  /*------ HEADER ----------------------*/
+	
+	header {
+		height: 70px;
+		background: #0097A7;
+	}
+	
+	#headerlogo {
+		width: 50px;
+		height: 50px;
+		margin: 10px 0 0 10px;
+		float: left;
+		background-image: url("../images/logo-zorgsamen.svg");
+		background-repeat: no-repeat;
+	}
+	
+	#headerbutton {
+		float: right;
+		color: white;
+		font-size: 32px;
+		margin: 22px 10px 0 0;
+	}
+}

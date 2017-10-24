@@ -1,0 +1,158 @@
+/* height */
+.h0,
+.h5,
+.h10,
+.h15,
+.h20,
+.h25,
+.h30,
+.h35,
+.h40,
+.h45,
+.h50,
+.h60,
+.h65,
+.h70,
+.h80,
+.h85,
+.h100,
+.h125,
+.h150 {
+    clear: both;
+    display: block;
+}
+
+.h5 {
+    height: 5px;
+}
+
+.h10 {
+    height: 10px;
+}
+
+.h20 {
+    height: 20px;
+}
+
+.h30 {
+    height: 30px;
+}
+
+.h35 {
+    height: 35px;
+}
+
+.h40 {
+    height: 40px;
+}
+
+.h45 {
+    height: 45px;
+}
+
+.h50 {
+    height: 50px;
+}
+
+.h60 {
+    height: 60px;
+}
+
+.h65 {
+    height: 65px;
+}
+
+.h70 {
+    height: 70px;
+}
+
+.h80 {
+    height: 80px;
+}
+
+.h85 {
+    height: 85px;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h125 {
+    height: 125px;
+}
+
+.h150 {
+    height: 150px;
+}
+
+/* helpers */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.z1 {
+    position: relative;
+    z-index: 1;
+}
+
+.text ul {
+    margin: 0px;
+    padding: 0 0 0 20px;
+}
+
+.text ul li a {
+    text-decoration: none;
+}
+
+.text ul li a:hover {
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+
+.text a {
+    transition: ease color 0.3s;
+    -webkit-transition: ease color 0.3s;
+}
+
+img {
+    width:100%;
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0px;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+.nodec {
+    text-decoration: none;
+}

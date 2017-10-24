@@ -1,0 +1,555 @@
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+
+/*------------------------------------*\
+    Default Grid
+\*------------------------------------*/
+[class*='col-'] {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.no-p {
+    padding: 0px;
+}
+.grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.grid-pad {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.push-right {
+    float: right;
+}
+.show-on-mobile {
+  display: none;
+}
+.col-1-1 {
+    width: 100%;
+}
+.col-2-3,
+.col-8-12 {
+    width: 66.66%;
+}
+.col-1-2,
+.col-6-12 {
+    width: 50%;
+}
+.col-1-3,
+.col-4-12 {
+    width: 33.33%;
+}
+.col-1-4,
+.col-3-12 {
+    width: 25%;
+}
+.col-1-5 {
+    width: 20%;
+}
+.col-1-6,
+.col-2-12 {
+    width: 16.667%;
+}
+.col-1-7 {
+    width: 14.28%;
+}
+.col-1-8 {
+    width: 12.5%;
+}
+.col-1-9 {
+    width: 11.1%;
+}
+.col-1-10 {
+    width: 10%;
+}
+.col-1-11 {
+    width: 9.09%;
+}
+.col-1-12 {
+    width: 8.33%
+}
+.col-11-12 {
+    width: 91.66%
+}
+.col-10-12 {
+    width: 83.333%;
+}
+.col-9-12 {
+    width: 75%;
+}
+.col-5-12 {
+    width: 41.66%;
+}
+.col-7-12 {
+    width: 58.33%
+}
+.push-2-3,
+.push-8-12 {
+    margin-left: 66.66%;
+}
+.push-1-2,
+.push-6-12 {
+    margin-left: 50%;
+}
+.push-1-3,
+.push-4-12 {
+    margin-left: 33.33%;
+}
+.push-1-4,
+.push-3-12 {
+    margin-left: 25%;
+}
+.push-1-5 {
+    margin-left: 20%;
+}
+.push-1-6,
+.push-2-12 {
+    margin-left: 16.667%;
+}
+.push-1-7 {
+    margin-left: 14.28%;
+}
+.push-1-8 {
+    margin-left: 12.5%;
+}
+.push-1-9 {
+    margin-left: 11.1%;
+}
+.push-1-10 {
+    margin-left: 10%;
+}
+.push-1-11 {
+    margin-left: 9.09%;
+}
+.push-1-12 {
+    margin-left: 8.33%
+}
+
+
+/*------------------------------------*\
+    MD Grid
+\*------------------------------------*/
+@media screen and (max-width: 1024px) /* Als je de width aanpast pas ook de media query aan in default */ {
+    .grid {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .grid-pad {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    [class*='md-col-'] {
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .md-col-1-1 {
+        width: 100%;
+    }
+    .md-col-2-3,
+    .md-col-8-12 {
+        width: 66.66%;
+    }
+    .md-col-1-2,
+    .md-col-6-12 {
+        width: 50%;
+    }
+    .md-col-1-3,
+    .md-col-4-12 {
+        width: 33.33%;
+    }
+    .md-col-1-4,
+    .md-col-3-12 {
+        width: 25%;
+    }
+    .md-col-1-5 {
+        width: 20%;
+    }
+    .md-col-1-6,
+    .md-col-2-12 {
+        width: 16.667%;
+    }
+    .md-col-1-7 {
+        width: 14.28%;
+    }
+    .md-col-1-8 {
+        width: 12.5%;
+    }
+    .md-col-1-9 {
+        width: 11.1%;
+    }
+    .md-col-1-10 {
+        width: 10%;
+    }
+    .md-col-1-11 {
+        width: 9.09%;
+    }
+    .md-col-1-12 {
+        width: 8.33%
+    }
+    .md-col-11-12 {
+        width: 91.66%
+    }
+    .md-col-10-12 {
+        width: 83.333%;
+    }
+    .md-col-9-12 {
+        width: 75%;
+    }
+    .md-col-5-12 {
+        width: 41.66%;
+    }
+    .md-col-7-12 {
+        width: 58.33%
+    }
+    .hide-on-md {
+        display: none !important;
+        width: 0;
+        height: 0;
+    }
+    .no-p-md {
+        padding: 0px;
+    }
+
+    .md-push-2-3,
+    .md-push-8-12 {
+        margin-left: 66.66%;
+    }
+    .md-push-1-2,
+    .md-push-6-12 {
+        margin-left: 50%;
+    }
+    .md-push-1-3,
+    .md-push-4-12 {
+        margin-left: 33.33%;
+    }
+    .md-push-1-4,
+    .md-push-3-12 {
+        margin-left: 25%;
+    }
+    .md-push-1-5 {
+        margin-left: 20%;
+    }
+    .md-push-1-6,
+    .md-push-2-12 {
+        margin-left: 16.667%;
+    }
+    .md-push-1-7 {
+        margin-left: 14.28%;
+    }
+    .md-push-1-8 {
+        margin-left: 12.5%;
+    }
+    .md-push-1-9 {
+        margin-left: 11.1%;
+    }
+    .md-push-1-10 {
+        margin-left: 10%;
+    }
+    .md-push-1-11 {
+        margin-left: 9.09%;
+    }
+    .md-push-1-12 {
+        margin-left: 8.33%
+    }
+    .md-no-push {
+	    margin-left: 0%;
+    }
+}
+
+
+
+/*------------------------------------*\
+    SM Grid
+\*------------------------------------*/
+@media screen and (max-width: 768px) /* Als je de width aanpast pas ook de media query aan in default */ {
+    .grid {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .grid-pad {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    [class*='sm-col-'] {
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .sm-col-1-1 {
+        width: 100%;
+    }
+    .sm-col-2-3,
+    .sm-col-8-12 {
+        width: 66.66%;
+    }
+    .sm-col-1-2,
+    .sm-col-6-12 {
+        width: 50%;
+    }
+    .sm-col-1-3,
+    .sm-col-4-12 {
+        width: 33.33%;
+    }
+    .sm-col-1-4,
+    .sm-col-3-12 {
+        width: 25%;
+    }
+    .sm-col-1-5 {
+        width: 20%;
+    }
+    .sm-col-1-6,
+    .sm-col-2-12 {
+        width: 16.667%;
+    }
+    .sm-col-1-7 {
+        width: 14.28%;
+    }
+    .sm-col-1-8 {
+        width: 12.5%;
+    }
+    .sm-col-1-9 {
+        width: 11.1%;
+    }
+    .sm-col-1-10 {
+        width: 10%;
+    }
+    .sm-col-1-11 {
+        width: 9.09%;
+    }
+    .sm-col-1-12 {
+        width: 8.33%
+    }
+    .sm-col-11-12 {
+        width: 91.66%
+    }
+    .sm-col-10-12 {
+        width: 83.333%;
+    }
+    .sm-col-9-12 {
+        width: 75%;
+    }
+    .sm-col-5-12 {
+        width: 41.66%;
+    }
+    .sm-col-7-12 {
+        width: 58.33%
+    }
+    .hide-on-sm {
+        display: none !important;
+        width: 0;
+        height: 0;
+    }
+    .no-p-sm {
+        padding: 0px;
+    }
+
+    .sm-push-2-3,
+    .sm-push-8-12 {
+        margin-left: 66.66%;
+    }
+    .sm-push-1-2,
+    .sm-push-6-12 {
+        margin-left: 50%;
+    }
+    .sm-push-1-3,
+    .sm-push-4-12 {
+        margin-left: 33.33%;
+    }
+    .sm-push-1-4,
+    .sm-push-3-12 {
+        margin-left: 25%;
+    }
+    .sm-push-1-5 {
+        margin-left: 20%;
+    }
+    .sm-push-1-6,
+    .sm-push-2-12 {
+        margin-left: 16.667%;
+    }
+    .sm-push-1-7 {
+        margin-left: 14.28%;
+    }
+    .sm-push-1-8 {
+        margin-left: 12.5%;
+    }
+    .sm-push-1-9 {
+        margin-left: 11.1%;
+    }
+    .sm-push-1-10 {
+        margin-left: 10%;
+    }
+    .sm-push-1-11 {
+        margin-left: 9.09%;
+    }
+    .sm-push-1-12 {
+        margin-left: 8.33%
+    }
+    .sm-no-push {
+	    margin-left: 0%;
+    }
+}
+
+
+/*------------------------------------*\
+    XS Grid
+\*------------------------------------*/
+@media screen and (max-width: 480px) /* Als je de width aanpast pas ook de media query aan in default */  {
+    .grid {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .grid-pad {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    [class*='xs-col-'] {
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .xs-col-1-1 {
+        width: 100%;
+    }
+    .xs-col-2-3,
+    .xs-col-8-12 {
+        width: 66.66%;
+    }
+    .xs-col-1-2,
+    .xs-col-6-12 {
+        width: 50%;
+    }
+    .xs-col-1-3,
+    .xs-col-4-12 {
+        width: 33.33%;
+    }
+    .xs-col-1-4,
+    .xs-col-3-12 {
+        width: 25%;
+    }
+    .xs-col-1-5 {
+        width: 20%;
+    }
+    .xs-col-1-6,
+    .xs-col-2-12 {
+        width: 16.667%;
+    }
+    .xs-col-1-7 {
+        width: 14.28%;
+    }
+    .xs-col-1-8 {
+        width: 12.5%;
+    }
+    .xs-col-1-9 {
+        width: 11.1%;
+    }
+    .xs-col-1-10 {
+        width: 10%;
+    }
+    .xs-col-1-11 {
+        width: 9.09%;
+    }
+    .xs-col-1-12 {
+        width: 8.33%
+    }
+    .xs-col-11-12 {
+        width: 91.66%
+    }
+    .xs-col-10-12 {
+        width: 83.333%;
+    }
+    .xs-col-9-12 {
+        width: 75%;
+    }
+    .xs-col-5-12 {
+        width: 41.66%;
+    }
+    .xs-col-7-12 {
+        width: 58.33%
+    }
+    .hide-on-xs {
+        display: none !important;
+        width: 0;
+        height: 0;
+    }
+    .no-p-xs {
+        padding: 0px;
+    }
+
+    .xs-push-2-3,
+    .xs-push-8-12 {
+        margin-left: 66.66%;
+    }
+    .xs-push-1-2,
+    .xs-push-6-12 {
+        margin-left: 50%;
+    }
+    .xs-push-1-3,
+    .xs-push-4-12 {
+        margin-left: 33.33%;
+    }
+    .xs-push-1-4,
+    .xs-push-3-12 {
+        margin-left: 25%;
+    }
+    .xs-push-1-5 {
+        margin-left: 20%;
+    }
+    .xs-push-1-6,
+    .xs-push-2-12 {
+        margin-left: 16.667%;
+    }
+    .xs-push-1-7 {
+        margin-left: 14.28%;
+    }
+    .xs-push-1-8 {
+        margin-left: 12.5%;
+    }
+    .xs-push-1-9 {
+        margin-left: 11.1%;
+    }
+    .xs-push-1-10 {
+        margin-left: 10%;
+    }
+    .xs-push-1-11 {
+        margin-left: 9.09%;
+    }
+    .xs-push-1-12 {
+        margin-left: 8.33%
+    }
+    .xs-no-push {
+	    margin-left: 0%;
+    }
+}

@@ -1,0 +1,107 @@
+p {
+	font-family: 'robotoregular', arial;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+	color: #0098A9;
+}
+h1 {
+	font-family: 'robotobold', arial;
+    margin: 0px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+	color: #0098A9;
+}
+
+h2 {
+	font-family: 'robotobold', arial;
+    margin: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+	color: #0098A9;
+}
+
+h3 {
+    margin: 0px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* kleuren */
+/* donkerblauw */
+
+.bg1 {
+    background-color: rgb(255, 255, 255);
+}
+
+.cl1 {
+    color: rgb(255, 255, 255);
+}
+/* donkerblauw */
+
+.bg2 {
+    background-color: rgb(0, 32, 60);
+}
+
+.cl2 {
+    color: rgb(0, 32, 60);
+}
+/* blauw */
+
+.bg3 {
+    background-color: rgb(0, 35, 79);
+}
+
+.cl3 {
+    color: rgb(0, 35, 79);
+}
+/* lichtblauw */
+
+.bg4 {
+    background-color: rgb(41, 124, 220);
+}
+
+.cl4 {
+    color: rgb(41, 124, 220);
+}
+/* lichtgroen */
+
+.bg5 {
+    background-color: rgb(172, 207, 121);
+}
+
+.cl5 {
+    color: rgb(172, 207, 121);
+}
+/* lichtgrijs */
+
+.bg6 {
+    background-color: rgb(238, 238, 238);
+}
+
+.cl6 {
+    color: rgb(102, 102, 102);
+}
